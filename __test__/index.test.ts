@@ -1,7 +1,7 @@
 import { expect } from "chai"
 import objectToCommand from '../src/index'
 
-describe('Object To Arguments', () => {
+describe('Object To Command Arguments', () => {
   const data = {
     deploymentType: 'build',
     forceUpdate: true,
@@ -11,7 +11,7 @@ describe('Object To Arguments', () => {
     '--buildTarget': 'ios',
     deployIt: true
   }
-  it('should convert object to argument', () => {
+  it('should convert object to command arguments', () => {
     const result = objectToCommand(data)
     expect(result).to.equal(
       ' --deployment-type="build" --force-update --silent="false" --app-name="node" --app-version="1.0.0" --build-target="ios" --deploy-it'

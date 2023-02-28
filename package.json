@@ -1,6 +1,6 @@
 {
-  "name": "object-to-arguments",
-  "version": "1.0.0",
+  "name": "object-to-command",
+  "version": "0.1.0",
   "scripts": {
     "build-ts": "tsc",
     "build": "npm run build-ts",
